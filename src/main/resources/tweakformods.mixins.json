@@ -3,9 +3,7 @@
   "package": "com.qweasd.tweakformods.mixins",
   "plugin": "com.qweasd.tweakformods.mixins.TweakformodsMixinPlugin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [
-    "createmoreburners.TurretBlockEntityMixin"
-  ],
+  "mixins": [],
   "client": [
     "immersivepetroleum.IPRenderTypesMixin",
     "immersivepetroleum.MultiblockOilTankRendererMixin",
