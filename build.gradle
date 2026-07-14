@@ -26,10 +26,6 @@ sourceSets.main.resources {
     exclude("src/generated/**/.cache") // datagen cache files
 }
 
-repositories {
-    // Add here additional repositories if required by some of the dependencies below.
-}
-
 base {
     archivesName = mod_id
 }
@@ -117,8 +113,27 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
+repositories {
+    // Add here additional repositories if required by some of the dependencies below.
+    maven {
+        url = "https://api.modrinth.com/maven"
+		content {
+            includeGroup "maven.modrinth"
+        }
+	}
+	maven {
+        url = "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+
 dependencies {
-    implementation("maven:modrinth")
+    implementation("maven.modrinth:immersiveengineering:${ie_version}")
+    implementation("maven.modrinth:immersivepetroleum:${ip_version}")
+    implementation("maven.modrinth:create-diesel-generators:${cdg_version}")
+
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -152,23 +167,6 @@ publishing {
             from components.java
         }
     }
-    repositories {
-        maven {
-            url "file://${project.projectDir}/repo"
-        }
-    }
-
-    repositories {
-        maven {
-            name = "Modrinth"
-            url = "https://api.modrinth.com/maven"
-        }
-        maven {
-            name = "CurseForge"
-            url = "https://maven.minecraftforge.net/"
-        }
-    }
-
 }
 
 tasks.withType(JavaCompile).configureEach {

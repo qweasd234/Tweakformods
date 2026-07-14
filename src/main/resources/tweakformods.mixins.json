@@ -1,8 +1,16 @@
 {
   "required": true,
-  "package": "com.qweasd.tweakformods.mixin",
+  "package": "com.qweasd.tweakformods.mixins",
+  "plugin": "com.qweasd.tweakformods.mixins.TweakformodsMixinPlugin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "createmoreburners.TurretBlockEntityMixin"
+  ],
+  "client": [
+    "immersivepetroleum.IPRenderTypesMixin",
+    "immersivepetroleum.MultiblockOilTankRendererMixin",
+    "immersivepetroleum.ProjectorRenderMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },
