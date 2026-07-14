@@ -1,0 +1,11 @@
+{
+  "tweakformods.configuration.title": "Tweak for Mods Configuration",
+  "tweakformods.configuration.immersivePetroleum": "Immersive Petroleum",
+  "tweakformods.configuration.immersivePetroleum.tooltip": "Rendering compatibility fixes for Immersive Petroleum.",
+  "tweakformods.configuration.renderTypes": "Iris Render Type Compatibility",
+  "tweakformods.configuration.renderTypes.tooltip": "Fixes Immersive Petroleum custom render types when Iris is installed.",
+  "tweakformods.configuration.oilTankRenderer": "Oil Tank Rendering Fixes",
+  "tweakformods.configuration.oilTankRenderer.tooltip": "Fixes the oil tank background, side fluid ports, and fluid animation rendering.",
+  "tweakformods.configuration.projectorRenderer": "Projector Rendering Fixes",
+  "tweakformods.configuration.projectorRenderer.tooltip": "Fixes invisible projections, flickering, overlapping-face depth errors, and missing-template crashes."
+}

@@ -1,0 +1,11 @@
+{
+  "tweakformods.configuration.title": "模组微调配置",
+  "tweakformods.configuration.immersivePetroleum": "沉浸石油",
+  "tweakformods.configuration.immersivePetroleum.tooltip": "沉浸石油的渲染兼容性修复。",
+  "tweakformods.configuration.renderTypes": "Iris 渲染类型兼容",
+  "tweakformods.configuration.renderTypes.tooltip": "修复安装 Iris 后沉浸石油自定义渲染类型不兼容的问题。",
+  "tweakformods.configuration.oilTankRenderer": "储油罐渲染修复",
+  "tweakformods.configuration.oilTankRenderer.tooltip": "修复储油罐背景、侧面流体接口及流体动画的渲染问题。",
+  "tweakformods.configuration.projectorRenderer": "投影仪渲染修复",
+  "tweakformods.configuration.projectorRenderer.tooltip": "修复投影不可见、闪烁、重叠面深度错误及模板缺失崩溃。"
+}
